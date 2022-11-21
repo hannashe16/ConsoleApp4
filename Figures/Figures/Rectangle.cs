@@ -11,11 +11,11 @@
             BottomRight = bottomRight;
         }
 
-        public static double GetRectangleArea(Point rectangleTopLeft, Point rectangleBottomRight)
+        public double GetRectangleArea()
         {
             double rectangleLengh = 0, rectangleWidth = 0, rectangleArea = 0;
-            rectangleLengh = rectangleBottomRight.X - rectangleTopLeft.X;
-            rectangleWidth = rectangleTopLeft.Y - rectangleBottomRight.Y;
+            rectangleLengh = BottomRight.X - TopLeft.X;
+            rectangleWidth = TopLeft.Y - BottomRight.Y;
             rectangleArea = rectangleLengh * rectangleWidth;
             return rectangleArea;
         }
